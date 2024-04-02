@@ -1,0 +1,8 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "Unite Summita",
+  "details": "Um evento para quem é apaixonado por programaçãoo",
+  "maximumAttendees": 100
+}
