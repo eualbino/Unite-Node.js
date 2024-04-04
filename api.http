@@ -2,7 +2,25 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Unite Summita",
-  "details": "Um evento para quem é apaixonado por programaçãoo",
-  "maximumAttendees": 100
+  "title": "Novo evento",
+  "details": null,
+  "maximumAttendees": 1
 }
+
+###
+
+POST http://localhost:3333/events/f81a13bf-a3b6-45c8-b6a7-7dec6a1d6cee/attendees
+Content-Type: application/json
+
+{
+  "name": "Lucas Gonçalves",
+  "email": "lucas.g.apostolo3@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/f81a13bf-a3b6-45c8-b6a7-7dec6a1d6cee
+
+###
+
+GET http://localhost:3333/attendees/1/badge
