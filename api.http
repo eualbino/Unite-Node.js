@@ -2,25 +2,33 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Novo evento",
+  "title": "Seila evento",
   "details": null,
-  "maximumAttendees": 1
+  "maximumAttendees": 21
 }
 
 ###
 
-POST http://localhost:3333/events/f81a13bf-a3b6-45c8-b6a7-7dec6a1d6cee/attendees
+POST http://localhost:3333/events/418334c0-3713-4447-82ac-d2547a442c32/attendees
 Content-Type: application/json
 
 {
-  "name": "Lucas Gonçalves",
-  "email": "lucas.g.apostolo3@gmail.com"
+  "name": "Jose Gonçalvess",
+  "email": "alberto.g.a2s@gmail.com"
 }
 
 ###
 
-GET http://localhost:3333/events/f81a13bf-a3b6-45c8-b6a7-7dec6a1d6cee
+GET http://localhost:3333/events/418334c0-3713-4447-82ac-d2547a442c32
 
 ###
 
-GET http://localhost:3333/attendees/1/badge
+GET http://localhost:3333/attendees/2/badge
+
+###
+
+GET http://localhost:3333/attendees/2/check-in
+
+###
+
+GET http://localhost:3333/events/418334c0-3713-4447-82ac-d2547a442c32/attendees?query=asad
