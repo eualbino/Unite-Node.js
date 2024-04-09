@@ -4,6 +4,8 @@
 
 **`npm install typescript @types/node -D`** | Para instalar o typescrips no node.
 
+**`npm install tsc`** | Para instalar o tsconfig.json no node.
+
 **`npx tsx watch src/server.ts`** | Roda o comando que estiver no arquivo server.ts.
 #
 #### ORM:  
